@@ -13,6 +13,12 @@ Run `./setup-local-dns.sh` and  `/etc/hosts`
 ./setup-local-dns.sh
 ```
 
+Export KUBECONFIG
+
+```
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+```
+
 Get grafana admin password:
 ```
 ./grafana-password.sh
@@ -20,11 +26,6 @@ Get grafana admin password:
 
 Login to [http://monitoring.playground.local](http://monitoring.playground.local) via username/password: `admin/{output_from_previous_command}`
 
-Export KUBECONFIG
-
-```
-export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
-```
 
 Check kubectl context:
 
