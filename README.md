@@ -8,7 +8,7 @@ Install k3s cluster + all required components:
 ./start-all.sh
 ```
 
-Run `./setup-local-dns.sh` and  `/etc/hosts`
+Run `./setup-local-dns.sh` and  edit `/etc/hosts`
 ```
 ./setup-local-dns.sh
 ```
