@@ -26,6 +26,12 @@ Export KUBECONFIG
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 ```
 
+Check kubectl context:
+
+```
+kubectl get pods -A
+```
+
 Delete whole cluster:
 
 ```
