@@ -38,3 +38,16 @@ Delete whole cluster:
 ```
 k3s-uninstall.sh
 ```
+
+## Loki
+    
+Access loki via port-forward:
+```
+kubectl -n monitoring port-forward svc/loki 3100:3100
+```
+
+Query loki via cli:
+
+```
+logcli query '{namespace="frontend"}'
+```
